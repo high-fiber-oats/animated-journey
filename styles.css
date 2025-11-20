@@ -5,9 +5,9 @@
     border-radius: 10px;
 }
 
-main {
+/*main {
     text-align: center;
-}
+}*/
 
 
 li {
@@ -24,7 +24,12 @@ nav {
     color: white;
     height: auto;
     width:auto; 
-    display: flex;
+    display: block;
+}
+
+.nav_logo {
+    display: none;
+    background-color: peachpuff;
 }
 
 .nav_links {
@@ -38,6 +43,13 @@ nav {
 }
 
 .about_link:hover, .projects_link:hover, .contact_link:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: aliceblue;
+    padding: 10%;
+}
+
+.about_link:visited, .projects_link:visited, .contact_link:visited {
     border: 2px solid black;
     color: black;
     background-color: aliceblue;
@@ -77,6 +89,11 @@ p {
 }
 
 /*skills section*/
+
+.skills_tech, .skills_soft {
+    text-align: right;
+}
+
 .skill_ex {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
@@ -84,5 +101,35 @@ p {
     font-size: 1.6rem;
     background: rgba(229, 207, 207, 0.639);
     border-radius: 5px;
-    color: rgb(11, 11, 11); 
+    color: rgb(11, 11, 11);
+    text-align: left; 
+}
+
+/*contact section*/
+
+/*.contact {
+    border: 2px solid navy;
+    padding: auto;
+    font-family: 'Times New Roman', Times, serif;
+}*/
+
+.contact {
+    border: 2px solid navy;
+    padding-bottom: 3%;
+}
+
+.contact_title, .Submit {
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
 }
