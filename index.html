@@ -15,7 +15,7 @@
             <li class="contact_link"><a href="#contact">Contact</a></li>
         </ul>
 
-        <!--<div class="logo_nav"><img src="h-f-oats_logo2.png" alt="high fibre logo 2"></div>-->
+        <img class="nav_logo" src="h-f-oats_logo2.png" alt="high fibre logo 2">
     </nav>
 
     <header class="header">
@@ -33,20 +33,6 @@
                 <h3>Web Developer</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sequi?</p>
             </div>
-
-            <table>
-                <th>Web Developer</th>
-                <th>Skills</th>
-
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, qui!</td>
-                <td>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </td>
-            </table>
 
             <div class="about_skills">
                 <h3>My Skills</h3>
@@ -86,10 +72,65 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, consequuntur.</p>
             </div>
         </section>
-        <section id="contact">
-            <!--input tags, label tags, info tags, etc-->
+        <section id="contact" class="contact">
+            <h3 class="contact_title">Send Me a Hello!</h3>
+            <form>
+                <fieldset>
+                    <legend>The "Who's" & "What's"</legend>
+                    <label for="name">Name <input 
+                                            id="name" 
+                                            type="text"
+                                            name="name"
+                                            placeholder="Enter your Name" 
+                                            required>
+                    </label>
+                    <label for="email">Email <input 
+                                            id="email" 
+                                            type="email"
+                                            name="email"
+                                            placeholder="Enter your email address" 
+                                            required>
+                    </label>
+                    <label for="cel_number">Phone Number <input 
+                                            id="cel_number" 
+                                            type="tel" 
+                                            name="cell-phone-number"
+                                            placeholder="optional method of contact">
+                    </label>
+                    
+                    <label for="message">Leave a Note/Comment
+                        <textarea id="message" name="userMessage" rows="5" cols="30" placeholder="Hello!"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>(Required)Why are you trying to get a hold of me?</legend>
+                    <label for="personal-contact"><input 
+                            type="radio"
+                            value="personal"
+                            name="reachout-reason"
+                            id="personal-contact" 
+                            checked/>Personal Reasons</label>
+                    <label for="business-contact"><input 
+                            type="radio" 
+                            value="business"
+                            name="reachout-reason" 
+                            id="business-contact" />Professional Enquiry</label>
+                </fieldset>
+
+                <br>
+                <div class="Submit">
+                    <input 
+                            type="submit" 
+                            value="Submit" 
+                            id="submit" 
+                            method="post">
+                </div>
+            </form>
         </section>
     </main>
+
+
     <footer>
         <h4>See more of me here:</h4>
         <ul class="footer_links">
